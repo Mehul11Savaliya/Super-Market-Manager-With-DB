@@ -1,0 +1,9 @@
+CREATE TABLE `absolute09`.`bills` (`bill_id` VARCHAR(10) NOT NULL , 
+                                   `cname` VARCHAR(50) NOT NULL ,
+                                   `hby` VARCHAR(50) NOT NULL , 
+                                   `pmethod` VARCHAR(19) NOT NULL , 
+                                   `data` JSON,
+                                   `total` DECIMAL(10) NOT NULL );
+
+
+CREATE TABLE `absolute09`.`items` (`icode` VARCHAR(10) NOT NULL , `cmpny` VARCHAR(25) NOT NULL , `iprice` DECIMAL(10) NOT NULL , `qty` INT(5) NOT NULL , `iname` VARCHAR(50) NOT NULL , `catagory` VARCHAR(12) NOT NULL , `lhby` VARCHAR(50) NOT NULL , `data` JSON NOT NULL ) ENGINE = InnoDB;
